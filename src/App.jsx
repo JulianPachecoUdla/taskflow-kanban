@@ -90,7 +90,9 @@ function App() {
           <h1>TaskFlow</h1>
           <p>Organiza tus tareas y mantén el control de tu trabajo.</p>
         </div>
-        <span className="task-count">{tasks.length} tareas</span>
+        <span className="task-count">
+  {tasks.length} tareas | {tasks.filter((task) => task.status === 'Completado').length} completadas
+</span>
       </header>
 
       <section className="task-form">
