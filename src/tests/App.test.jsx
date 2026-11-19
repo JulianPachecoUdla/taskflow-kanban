@@ -8,7 +8,8 @@ describe('Pruebas de la aplicación TaskFlow', () => {
   it('debe mostrar las tres columnas del tablero', () => {
     render(<App />)
 
-    expect(screen.getByRole('heading', { name: 'Pendiente' })).toBeInTheDocument()
+    //expect(screen.getByRole('heading', { name: 'Pendiente' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Pendiente XYZ' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'En progreso' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Completado' })).toBeInTheDocument()
   })
